@@ -1,18 +1,23 @@
-import { NgModule } from "@angular/core";
-import { CommonModule } from "@angular/common";
-import { FilmsListComponent } from "./films-list/films-list.component";
-import { RouterModule, Routes } from "@angular/router";
+import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { FilmsListComponent } from './films-list/films-list.component';
+import { FilmsComponent } from './films.component';
 
 const routes: Routes = [
   {
-    path: "film-list",
-    component: FilmsListComponent
-  }
+    path: '',
+    component: FilmsComponent,
+  },
+  {
+    path: 'films-list',
+    component: FilmsListComponent,
+  },
 ];
 
 @NgModule({
   imports: [CommonModule, RouterModule.forChild(routes)],
   exports: [RouterModule],
-  declarations: []
+  declarations: [],
 })
 export class FilmsRoutingModule {}
