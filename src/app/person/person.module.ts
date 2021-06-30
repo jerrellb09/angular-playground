@@ -6,7 +6,7 @@ import { PersonRoutingModule } from './person-routing.module';
 import { PersonService } from './person.service';
 
 @NgModule({
-  imports: [CommonModule, PersonRoutingModule, SharedModule],
+  imports: [CommonModule, PersonRoutingModule ],
   declarations: [AddNewPersonComponent],
   providers: [PersonService],
 })

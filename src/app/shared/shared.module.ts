@@ -51,6 +51,6 @@ import { MatNativeDateModule } from "@angular/material/core";
     MatDatepickerModule,
     MatNativeDateModule
   ],
-  declarations: [ShoppingCartComponent, DialogComponent]
+  declarations: [ShoppingCartComponent]
 })
 export class SharedModule {}
