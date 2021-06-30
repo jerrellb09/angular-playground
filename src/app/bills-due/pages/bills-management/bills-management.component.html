@@ -1,0 +1,8 @@
+<div>
+  <h2>Bills Management</h2>
+</div>
+
+<app-add-bill [bills]="this.bills" (billAdded)="billAdded($event)"></app-add-bill>
+
+
+<app-bills-list [bills]="this.bills" (removeBill)="removeBill($event)"></app-bills-list>

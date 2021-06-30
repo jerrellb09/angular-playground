@@ -1,0 +1,10 @@
+<div fxLayout="row" *ngIf="this.bills.length > 0">
+  <div *ngFor="let bill of bills">
+    <div *ngIf="!bill.deleted"></div>
+    <p>Bill Name: {{bill.name}}</p>
+    <p>Bill Due Date: {{bill.dateDue | date: 'shortDate'}}</p>
+  <div>
+    <button (click)="removeBillDue(bill)">X</button>
+  </div>
+ </div>
+</div>

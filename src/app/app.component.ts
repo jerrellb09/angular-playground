@@ -1,10 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, VERSION } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
+  selector: 'my-app',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.sass']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'angular-playground';
+  constructor(private router: Router) {}
+  name = 'Angular ' + VERSION.major;
+
+  goToFilmsListPage() {
+    this.router.navigate(['/films/film-list']);
+  }
+
+  goToBillsDue() {
+    this.router.navigate(['/bills-due/management']);
+  }
 }
