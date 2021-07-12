@@ -8,10 +8,13 @@ const routes: Routes = [
   {
     path: '',
     component: FilmsComponent,
-  },
-  {
-    path: 'films-list',
-    component: FilmsListComponent,
+    children: [
+      { path: '', redirectTo: 'films-list' },
+      {
+        path: 'films-list',
+        component: FilmsListComponent,
+      },
+    ],
   },
 ];
 

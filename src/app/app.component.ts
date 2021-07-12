@@ -11,10 +11,10 @@ export class AppComponent {
   name = 'Angular ' + VERSION.major;
 
   goToFilmsListPage() {
-    this.router.navigate(['/films/film-list']);
+    this.router.navigate(['/films/films-list']);
   }
 
   goToBillsDue() {
-    this.router.navigate(['/bills-due/management']);
+    this.router.navigate(['/bills-due']);
   }
 }

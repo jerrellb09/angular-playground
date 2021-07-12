@@ -52,6 +52,9 @@ export default class HeaderComponent {
   @Input()
   user: unknown = null;
 
+  @Input()
+  date = new Date();
+
   @Output()
   onLogin = new EventEmitter<Event>();
 
@@ -60,4 +63,6 @@ export default class HeaderComponent {
 
   @Output()
   onCreateAccount = new EventEmitter<Event>();
+
+
 }

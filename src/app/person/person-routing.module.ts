@@ -4,8 +4,11 @@ import { AddNewPersonComponent } from './add-new-person/add-new-person.component
 import { PersonComponent } from './person.component';
 
 const routes: Routes = [
-  { path: '', component: PersonComponent },
-  { path: 'add-new-person', component: AddNewPersonComponent },
+  {
+    path: '',
+    component: PersonComponent,
+    children: [{ path: 'add-new-person', component: AddNewPersonComponent }],
+  },
 ];
 
 @NgModule({
