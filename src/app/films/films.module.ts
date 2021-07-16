@@ -5,7 +5,7 @@ import { FilmsListComponent } from './films-list/films-list.component';
 import { FilmsRoutingModule } from './films-routing.module';
 
 @NgModule({
-  imports: [CommonModule, FilmsRoutingModule ],
+  imports: [CommonModule, FilmsRoutingModule, SharedModule],
   declarations: [FilmsListComponent],
 })
 export class FilmsModule {}
